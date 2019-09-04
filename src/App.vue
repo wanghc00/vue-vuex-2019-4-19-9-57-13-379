@@ -8,10 +8,10 @@
         <List v-bind:transIndex="index" />
       </li>
     </ol>
-    <!-- <div>
+    <div>
       <ul id="filters">
         <li>
-          <a href=" " data-filter="all">ALL</a>
+          <a href="#" data-filter="all">ALL</a>
         </li>
         <li>
           <a href="#" data-filter="active">Active</a>
@@ -20,7 +20,7 @@
           <a href="#" data-filter="complete">Complete</a>
         </li>
       </ul>
-    </div>-->
+    </div>
   </div>
 </template>
 
