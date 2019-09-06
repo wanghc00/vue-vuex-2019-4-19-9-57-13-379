@@ -5,9 +5,13 @@ Vue.use(Vuex);
 
 const store = new Vuex.Store({
     state: {
-        valueArr: []
+        valueArr: [],
+        userInput:"",
     },
     getters: {
+        getUserInput: function (state) {
+            return state.userInput;
+        },
         getValues: function (state) {
             return state.valueArr;
 
@@ -21,10 +25,12 @@ const store = new Vuex.Store({
     mutations: {
         submitMessage(state, submitValue) {
             state.valueArr.push(submitValue);
-        }
+        },
+        setUserInput(state,userInput){
+            state.userInput = userInput;
+        },
     }
-});
+  })
 
-export default store
-
-
+  export default store;
+  
